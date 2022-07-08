@@ -1,0 +1,283 @@
+* {
+  font-family: 'Times New Roman', Times, serif; }
+
+.grid {
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  align-items: stretch;
+  color: white; }
+  .grid .encabezado {
+    background-color: #353b48;
+    grid-column: 1/4;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center; }
+  .grid .encabezado h3 {
+    color: white; }
+  .grid .left {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; }
+  .grid .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-left: 1px solid #353b48; }
+
+p {
+  color: black;
+  font-size: 15px;
+  margin: 10px; }
+
+h3 {
+  color: black;
+  margin: 5px; }
+
+h6 {
+  color: #353b48;
+  margin: 5px; }
+
+h1 {
+  color: black;
+  margin-left: 10px; }
+
+h4 {
+  color: black;
+  margin: 10px; }
+
+.encabezado img {
+  height: 200px; }
+
+.left div {
+  height: auto;
+  border: solid; }
+
+.right div {
+  height: auto;
+  border: solid; }
+
+.formacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; }
+  .formacion p {
+    grid-column: 1/3; }
+  .formacion .date {
+    grid-column: 3/3;
+    height: 50px; }
+
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; }
+  .cursos p {
+    grid-column: 1/3; }
+  .cursos .date {
+    grid-column: 3/3;
+    height: 50px; }
+
+.cv a {
+  color: black; }
+
+.cv a:hover {
+  border: solid;
+  border-color: #e30052; }
+
+.border {
+  border-top: 1px solid #353b48; }
+
+/* ////////////////////SKILL SECCTION//////////////////// */
+.h1 {
+  color: black;
+  text-align: center; }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+#skills li {
+  margin: 20px 0; }
+
+#skills li h3 {
+  color: black;
+  text-align: center; }
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3; }
+  .bar span {
+    height: 2px;
+    float: left;
+    background: #2187e7; }
+
+.html {
+  width: 90%;
+  animation: html 4s; }
+
+@keyframes html {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+.css {
+  width: 65%;
+  animation: css 4s; }
+
+@keyframes css {
+  0% {
+    width: 0%; }
+  100% {
+    width: 65%; } }
+
+.sass {
+  width: 95%;
+  animation: sass 4s; }
+
+@keyframes sass {
+  0% {
+    width: 0%; }
+  100% {
+    width: 95%; } }
+
+.jquery {
+  width: 40%;
+  animation: jquery 4s; }
+
+@keyframes jquery {
+  0% {
+    width: 0%; }
+  100% {
+    width: 40%; } }
+
+.javascript {
+  width: 55%;
+  animation: javascript 4s; }
+
+@keyframes javascript {
+  0% {
+    width: 0%; }
+  100% {
+    width: 55%; } }
+
+.java {
+  width: 80%;
+  animation: java 4s; }
+
+@keyframes java {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } }
+
+.python {
+  width: 85%;
+  animation: python 4s; }
+
+@keyframes python {
+  0% {
+    width: 0%; }
+  100% {
+    width: 85%; } }
+
+.net {
+  width: 45%;
+  animation: net 4s; }
+
+@keyframes net {
+  0% {
+    width: 0%; }
+  100% {
+    width: 45%; } }
+
+.git {
+  width: 60%;
+  animation: git 4s; }
+
+@keyframes git {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+
+.adobe {
+  width: 100%;
+  animation: adobe 4s; }
+
+@keyframes adobe {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.mysql {
+  width: 45%;
+  animation: mysql 4s; }
+
+@keyframes msql {
+  0% {
+    width: 0%; }
+  100% {
+    width: 45%; } }
+
+.mongodb {
+  width: 20%;
+  animation: mongodb 4s; }
+
+@keyframes mongodb {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
+
+.scrum {
+  width: 60%;
+  animation: srcum 4s; }
+
+@keyframes scrum {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+
+@media (max-width: 768px) {
+  .grid {
+    display: block;
+    grid-template-columns: 1fr; }
+  .left {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; }
+  .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-left: 1px solid #353b48; }
+  .encabezado h3 {
+    display: none; }
+  .encabezado img {
+    z-index: 1000;
+    margin-left: 40%; } }
+
+@media (max-width: 440px) {
+  p {
+    font-size: 10px; }
+  h1 {
+    font-size: medium; }
+  h3 {
+    font-size: small; }
+  h4 {
+    font-size: smaller; }
+  .grid {
+    width: 100%; } }

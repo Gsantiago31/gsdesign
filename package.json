@@ -1,0 +1,8 @@
+{
+ "scripts": {
+  "scss": "node-sass -w scss -o css"
+ },
+ "dependencies": {
+  "typed.js": "^2.0.12"
+ }
+}

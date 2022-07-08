@@ -1,0 +1,110 @@
+#particle-js {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -1; }
+
+.main-container {
+  z-index: 99;
+  width: auto;
+  margin-left: 20%;
+  margin-right: auto;
+  position: absolute;
+  z-index: 99; }
+
+.main {
+  background-color: black;
+  margin: auto;
+  margin-top: 50px;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #555555; }
+
+.container {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+
+.text {
+  height: 200px;
+  grid-column: 1/4;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  .text h1 {
+    font-size: 300%;
+    text-align: center; }
+  .text h4 {
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center; }
+  .text div {
+    margin-top: 20px;
+    margin-left: 130px; }
+  .text div i {
+    font-size: 40px;
+    color: white; }
+  .text div i:hover {
+    color: #e30052;
+    cursor: pointer; }
+
+.img {
+  height: 200px;
+  grid-column: 4/6;
+  margin-left: auto; }
+  .img img {
+    width: 200px;
+    border-radius: 100px; }
+
+.main_box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 200px; }
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 2rem;
+  justify-content: center; }
+
+.box {
+  margin-top: 35px;
+  width: 200px;
+  height: 133.33px; }
+
+.box img {
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #e30052;
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-left: 10%;
+    margin-right: 9%; }
+  .main {
+    width: 80%;
+    margin-right: 10%; }
+  .container {
+    display: block;
+    margin-left: 10%; }
+  .text h1 {
+    font-size: 200%;
+    text-align: center; }
+  .text h4 {
+    text-align: center;
+    margin-right: auto; }
+  .text div {
+    margin-top: 20px;
+    margin-left: 22%; }
+  .text div i {
+    font-size: 40px;
+    color: white; }
+  .container img {
+    width: 150px;
+    margin-left: 15%;
+    margin-top: 15px; } }
