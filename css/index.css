@@ -10,7 +10,8 @@
   margin-left: 20%;
   margin-right: auto;
   position: absolute;
-  z-index: 99; }
+  z-index: 99;
+  display: block; }
 
 .main {
   background-color: black;
@@ -81,6 +82,21 @@
   border-radius: 10px;
   box-shadow: 10px 5px 5px #e30052;
   width: 100%; }
+
+.about {
+  width: 800px;
+  height: auto;
+  margin-bottom: 40px;
+  color: white; }
+  .about h2 {
+    text-align: center; }
+  .about p {
+    justify-content: center;
+    margin: 15px; }
+  .about a {
+    color: white; }
+  .about a:hover {
+    color: #e30052; }
 
 @media (max-width: 768px) {
   .main-container {
